@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Header from './components/Header';
+import GithubStars from './components/GithubStars';
+import GithubBattle from './components/GithubBattle';
+import PlayerBattle from './components/PlayerBattle';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Github-Battle</h1>
+      <BrowserRouter>
+        <Header />
+        <Route path="/" exact component={GithubStars} />
+        <Route path="/battle" exact component={GithubBattle} />
+        <Route path="/playerbattle" component={PlayerBattle} />
+      </BrowserRouter>
     </div>
   );
 }

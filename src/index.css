@@ -1,13 +1,238 @@
 body {
-  margin: 0;
+  width: 1100px;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+h1{
+  text-align: center;
+  color:crimson;
+}
+.page-btn-content{
+  display:flex;
+  justify-content: space-between;
+  margin: 0 4rem;
+}
+.page-btn{
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 900;
+  border:none;
+  background-color:white;
+}
+.page-btn-link{
+  text-decoration: none;
+}
+.page-btn-icon{
+  font-size:2rem;
+  border:none;
+  background-color:white;
+}
+h2,h3,h4,h5{
+  text-align: center;
+  font-size:1.6rem;
+  font-weight: 400;
+}
+.login{
+  font-weight:900;
+  color: rgb(189,66,57);
+  text-decoration: none;
+}
+h5{
+  margin-top: 6rem;
+  font-size: 2rem;
+}
+.battle-icon-one{
+  font-size:8rem;
+  padding: 2rem;
+  color:rgb(244,189,116);
+  background-color:rgb(235,235,235);
+}
+.battle-icon-two{
+  font-size:8rem;
+  padding: 2rem;
+  color:rgb(114,114,114);
+  background-color:rgb(235,235,235);
+}
+.battle-icon-three{
+  font-size:8rem;
+  padding: 2rem;
+  color:rgb(252,214,23);
+  background-color:rgb(235,235,235);
+}
+.label{
+  margin: .6rem 0;
+}
+.input{
+  padding: .3rem 1rem;
+  color:gray;
+}
+.input-submit{
+  padding: .3rem 1rem;
+  color:gray;
+}
+.input-submit:hover{
+  background-color:black;
+  color:white;
+}
+.battle-btn-content{
+  text-align: center;
+  margin-top: 1rem;
+}
+.battle-btn{
+  text-align: center;
+  margin: 1rem;
+  padding: .2rem 1.6rem;
+  color:white;
+  background-color:black;
+  border-radius: .2rem;
+}
+.navbar{
+  display:flex;
+  justify-content:center;
+  
+}
+.navbar h4{
+  font-size: 1rem;
+  font-weight:500;
+  margin: .4rem;
+  cursor:default;
+}
+.active{
+  color:rgb(224,99,38);
+}
+.img{
+  width: 8rem;
+  height: 7rem;
+}
+.card-containor{
+  width:14rem;
+  height:24rem;
+  margin: .8rem .4rem;
+  padding: 1rem;
+  border-radius: .4rem;
+  background-color:rgb(235,235,235);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.card-content{
+  display:flex;
+  flex-wrap: wrap;
+}
+.login-icon{
+  color:rgb(244,189,116);
+  margin-right: .4rem;
+}
+.star-icon{
+  color:rgb(252,214,23);
+  margin-right: .4rem;
+}
+.fork-icon{
+  color:rgb(129,195,245);
+  margin-right: .4rem;
+}
+.issue-icon{
+  color:rgb(233,136,147);
+  margin-right: .4rem;
+}
+.player-container{
+  display:flex;
+  justify-content:space-between;
+}
+.player-content{
+  display:flex;
+  padding: .6rem;
+  background-color:rgb(235,235,235);
+  border-radius: .4rem;
+}
+.player-img{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border:none;
+}
+.player-name{
+  font-size: 1rem;
+  margin: .0 2rem;
+  color:rgb(188,64,32);
+  font-weight: 900;
+}
+.player-delete{
+  color:rgb(188,64,32);
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-left: 14rem;
+  margin-top: .3rem;
+}
+.battle-card-container{
+  display:flex;
+  justify-content: center;
+}
+.battle-card-content{
+  background-color:rgb(235,235,235);
+  margin: 0 1rem;
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+  border-radius: .4rem;
+}
+.battle-title{
+  text-align: center;
+  font-size:1.8rem;
+  font-weight: 500;
+}
+.battle-img{
+  width: 8rem;
+  height: 8rem;
+  margin-left: 1.1rem;
+  border-radius: .4rem;
+}
+.battle-score{
+  font-size:1.2rem;
+  font-weight: 900;
+}
+.battle-player-login{
+  font-size:1.2rem;
+  font-weight: 900;
+  color:rgb(188,64,32);
+}
+.name-icon{
+  color:rgb(231,113,115);
+  margin: .5rem 1rem;
+}
+.location-icon{
+  color:rgb(144,116,254);
+  margin: .5rem 1rem;
+}
+.followers-icon{
+  color:rgb(129,195,245);
+  margin: .5rem 1rem;
+}
+.following-icon{
+  color:rgb(107,185,95);
+  margin: .5rem 1rem;
+}
+.repo-icon{
+  color:rgb(59,76,85);
+  margin: .5rem 1rem;
+}
+.btn-link{
+  text-decoration: none; 
+}
+.btn-link-name{
+  width:6rem;
+  background-color:black;
+  color:white;
+  padding: .6rem 2rem;
+  border-radius:.4rem;
+}
+.reset-btn{
+display:flex;
+justify-content: center;
 }
